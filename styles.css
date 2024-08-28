@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-section {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.login-container, .image-container {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+   
+}
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    display: none;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #361690;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-wrap: nowrap;
+}
+
+button:hover {
+    background-color: #635686;
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.social-login button {
+    width: 48%;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid;
+    font-size: 14px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-login .google {
+    border-color: #1F1F1F;
+    color: #1F1F1F;
+}
+
+.social-login .google i {
+    margin-right: 8px;
+}
+
+.social-login .google:hover {
+    background-color: #fff;
+    color: #1F1F1F;
+}
+
+.social-login .facebook {
+    border-color: #4267B2;
+    color: #4267B2;
+}
+
+.social-login .facebook i {
+    margin-right: 8px;
+}
+
+.social-login .facebook:hover {
+    background-color: #4267B2;
+    color: #fff;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
+    align-items: center;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    background-color:  #361690;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.image-container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.image-container-logo img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .login-section {
+        flex-direction: column;
+    }
+    .image-container {
+        display: none;
+    }
+    .login-section{
+        margin: auto 20px auto;
+    }
+    /* .social-login button{
+        width: 50%;
+    } */
+    .social-login {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .social-login button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .social-login button:last-child {
+        margin-bottom: 0;
+    }
+}
